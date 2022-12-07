@@ -1,6 +1,5 @@
 ﻿using System;
-using DevExpress.Web.ASPxEditors;
-using DevExpress.Web.ASPxPopupControl;
+using DevExpress.Web;
 
 public partial class WebUserControl : System.Web.UI.UserControl {
     protected void ASPxPopupControl1_Init(object sender, EventArgs e) {

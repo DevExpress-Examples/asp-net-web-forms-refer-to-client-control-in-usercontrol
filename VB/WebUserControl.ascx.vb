@@ -1,6 +1,5 @@
 ﻿Imports System
-Imports DevExpress.Web.ASPxEditors
-Imports DevExpress.Web.ASPxPopupControl
+Imports DevExpress.Web
 
 Partial Public Class WebUserControl
 	Inherits System.Web.UI.UserControl
