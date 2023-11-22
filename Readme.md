@@ -1,4 +1,5 @@
 <!-- default badges list -->
+![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128564917/13.1.4%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E2102)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
@@ -19,7 +20,7 @@ In this example, a user control contains a [ASPxButton](https://docs.devexpress.
 <dx:ASPxPopupControl ID="ASPxPopupControl1" runat="server" AllowDragging="True" CloseAction="CloseButton" OnInit="ASPxPopupControl1_Init" />
 ```
 
-When a user clicks the button, the pop-up window appears. The common practice is to set the [ClientInstanceName](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPopupControlBase.ClientInstanceName) property of the `ASPxPopupControl` and use it for calling client-side methods:
+When a user clicks the button, the pop-up window appears. The common practice is to set the [ClientInstanceName](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPopupControlBase.ClientInstanceName) property of the **ASPxPopupControl** and use it for calling client-side methods:
 
 ```aspx
 <dx:ASPxPopupControl ID="ASPxPopupControl1" runat="server" ClientInstanceName="popupControl" ...  />
@@ -34,7 +35,7 @@ However if you add multiple instances of the same user control onto your page, t
 
 ## Implementation Details
 
-This example uses the second approach to access the `ASPxPopupControl` on the client. The `ClientInstanceName` property value for ASPxPopupControl and `Click` event handler for ASPxButton are generated dynamically.
+This example uses the second approach to access the **ASPxPopupControl** on the client. The `ClientInstanceName` property value for **ASPxPopupControl** and `Click` event handler for **ASPxButton** are generated dynamically.
 
 ```csharp
 protected void ASPxPopupControl1_Init(object sender, EventArgs e) {
