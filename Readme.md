@@ -3,16 +3,16 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# ASP.NET Web Forms - How to refer to a client-side control encapsulated in certain instance of UserControl
+# ASP.NET Web Forms - How to refer to a client-side control encapsulated in a specific instance of UserControl
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e2102/)**
 <!-- run online end -->
 
-This example shows how to refer to a client-side control (pop-up window) encapsulated in certain instance of a user control.
+This example shows how to refer to a client-side control (pop-up window) encapsulated in a specific instance of a user control.
 
 ![](user-controls-with-popups.png)
 
-In this example, a user control contains a [ASPxButton](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxButton) and [ASPxPopupControl](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPopupControl) components. 
+In this example, a user control contains [ASPxButton](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxButton) and [ASPxPopupControl](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPopupControl) components.
 
 ```aspx
 <dx:ASPxButton ID="btnShow" runat="server" AutoPostBack="false" Text="Open My Own PopupControl" OnInit="btnShow_Init" />
@@ -27,14 +27,14 @@ When a user clicks the button, the pop-up window appears. The common practice is
 ```jscript
 popupControl.Show();  
 ```
-However if you add multiple instances of the same user control onto your page, the `ClientInstanceName` is no longer unique, and both user control instances now open the first popup control. There are two solutions to resolve this issue:
+However, if you add multiple instances of the same user control to your page, the `ClientInstanceName` is no longer unique, and both user control instances now open the first popup control. There are two solutions to resolve this issue:
 
 * Dynamically generate client-side code and use the `ClientID` property. It's also necessary to set the `EnableClientSideAPI` property to `true` and clear the `ClientInstanceName` property.
 * Dynamically generate a unique value for the `ClientInstanceName` property and also dynamically generate client-side code that uses the correct `ClientInstanceName` value.
 
 ## Implementation Details
 
-This example uses the second approach to access the **ASPxPopupControl** on the client. The `ClientInstanceName` property value for **ASPxPopupControl** and `Click` event handler for **ASPxButton** are generated dynamically.
+This example uses the second approach to access the **ASPxPopupControl** on the client. The `ClientInstanceName` property value for **ASPxPopupControl** and the `Click` event handler for **ASPxButton** are generated dynamically.
 
 ```csharp
 protected void ASPxPopupControl1_Init(object sender, EventArgs e) {
