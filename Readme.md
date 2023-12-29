@@ -5,9 +5,6 @@
 <!-- default badges end -->
 
 # ASP.NET Web Forms - How to refer to a client-side control encapsulated in a specific instance of UserControl
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128564917/)**
-<!-- run online end -->
 
 This example shows how to refer to a client-side control (pop-up window) encapsulated in a specific instance of a user control.
 
