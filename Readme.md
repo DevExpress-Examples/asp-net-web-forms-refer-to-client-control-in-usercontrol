@@ -62,7 +62,7 @@ protected void btnShow_Init(object sender, EventArgs e) {
 * [Access a Control on the Client Side](https://docs.devexpress.com/AspNet/4222/common-concepts/client-side-functionality#access-a-control-on-the-client-side)
 * [Access Controls in Templates on the Server](https://docs.devexpress.com/AspNet/403575/common-concepts/access-controls-in-templates-on-the-server)
 <!-- feedback -->
-## Does This Example Address Your Development Requirements/Objectives?
+## Does this example address your development requirements/objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-refer-to-client-control-in-usercontrol&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-refer-to-client-control-in-usercontrol&~~~was_helpful=no)
 
